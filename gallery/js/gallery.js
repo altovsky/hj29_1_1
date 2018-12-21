@@ -12,7 +12,7 @@ let iter = 0;
 currentPhoto.src = urls[iter];
 
 
-function buttobClick() {
+buttonClick {
 
   if (this.id === 'prevPhoto') {
 	iter === 0 ? iter = urls.length - 1: iter -= 1;
@@ -30,5 +30,5 @@ function buttobClick() {
 const prevPhoto = document.getElementById('prevPhoto');
 const nextPhoto = document.getElementById('nextPhoto');
 
-prevPhoto.onclick = buttobClick;
-nextPhoto.onclick = buttobClick;
+prevPhoto.onclick = buttonClick;
+nextPhoto.onclick = buttonClick;
