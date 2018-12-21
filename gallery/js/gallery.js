@@ -15,11 +15,11 @@ currentPhoto.src = urls[iter];
 buttonClick {
 
   if (this.id === 'prevPhoto') {
-	  iter === 0 ? iter = urls.length - 1: iter -= 1;
+	iter === 0 ? iter = urls.length - 1: iter -= 1;
   }
 
   else if (this.id === 'nextPhoto') {
-	  (iter === urls.length - 1) ? iter = 0 : iter += 1;
+	(iter === urls.length - 1) ? iter = 0 : iter += 1;
   }
   	
   currentPhoto.src = urls[iter];
