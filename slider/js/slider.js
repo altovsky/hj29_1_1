@@ -14,11 +14,11 @@ let iter = 0;
 sliderPhoto.src = `i/${urls[iter]}`;
 
 function showSlider(){
-	if (iter === urls.length) {
-		iter = 0;
-	}
-	sliderPhoto.src = `i/${urls[iter]}`;
-	iter += 1;
+  if (iter === urls.length) {
+	iter = 0;
+  }
+  sliderPhoto.src = `i/${urls[iter]}`;
+  iter += 1;
 }
 
 setInterval(showSlider, 5000)
